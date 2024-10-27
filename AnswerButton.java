@@ -6,8 +6,15 @@ public class AnswerButton extends JButton {
     public AnswerButton(boolean Correct) {
         this.Correct = Correct;
     }
+    public AnswerButton(boolean Correct, String startingText) {
+        this.Correct = Correct;
+        this.setText(startingText);
+    }
 
     public boolean isCorrect() {
         return this.Correct;
+    }
+    public void makeText(String text) {
+        this.setText(text);
     }
 }

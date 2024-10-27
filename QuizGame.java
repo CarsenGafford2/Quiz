@@ -1,27 +1,17 @@
-import javax.swing.*;
-import java.awt.*;
-
 public class QuizGame {
-    public static void main(String[] args) {
-        JFrame frame = new JFrame("Quiz Game");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.getContentPane().add(new QuizPanel());
+    
+    public QuizGame() {
 
-        // Create the menu bar
-        JMenuBar menu = new JMenuBar();
-        
-        // Create a panel to center the label
-        JPanel centerPanel = new JPanel();
-        centerPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
-        
-        JLabel questionLabel = new JLabel("Which is correct?");
-        centerPanel.add(questionLabel);
-        
-        menu.add(centerPanel);
-        
-        frame.setJMenuBar(menu);
-        
-        frame.pack();
-        frame.setVisible(true);
+    }
+
+    public boolean choice(AnswerButton[] Array, int chosenIndex) {
+        if (!(chosenIndex > Array.length - 1)) {
+            for (int x = 0; x < Array.length; x++) {
+                if (Array[x].isCorrect() == true && Array[x] == Array[chosenIndex]) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

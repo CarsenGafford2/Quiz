@@ -5,7 +5,6 @@ public class QuizGUI {
     public static void main(String[] args) {
         JFrame frame = new JFrame("Quiz Game");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.getContentPane().add(new QuizPanel());
 
         // Create the menu bar
         JMenuBar menu = new JMenuBar();
@@ -19,6 +18,7 @@ public class QuizGUI {
         centerPanel.add(questionLabel);
         
         menu.add(centerPanel);
+        frame.getContentPane().add(new QuizPanel(questionLabel, frame));
         
         frame.setJMenuBar(menu);
         

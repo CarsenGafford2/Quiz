@@ -9,8 +9,6 @@ public class QuizGUI {
     public static void main(String[] args) {
         JFrame frame = new JFrame("Quiz Game");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            file = args[0];
-        }
         frame.setLayout(new BorderLayout());
 
         JMenuBar menu = new JMenuBar();

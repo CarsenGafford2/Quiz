@@ -17,11 +17,11 @@ public class QuizPanel extends JPanel {
     private int correct = 0;
     private int incorrect = 0;
     private JFrame frame;
-    public QuizPanel(JLabel label, JFrame frame) {
+    public QuizPanel(JLabel label, JFrame frame, String fileName) {
         this.label = label;
         this.frame = frame;
         try {
-            File file = new File("Test.txt");
+            File file = new File(fileName);
             Scanner scan = new Scanner(file);
 
             this.label.setText(scan.nextLine());
@@ -46,6 +46,7 @@ public class QuizPanel extends JPanel {
             this.memoryIndex++;
         } catch(FileNotFoundException e) {
             System.out.println("File Not Found");
+            this.label.setText("File Not Found");
         }
     }
 

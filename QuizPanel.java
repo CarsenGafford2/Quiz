@@ -17,43 +17,30 @@ public class QuizPanel extends JPanel {
     private int correct = 0;
     private int incorrect = 0;
     private JFrame frame;
-    public QuizPanel(JLabel label, JFrame frame, String fileName) {
+    private File file;
+    public QuizPanel(JLabel label, JFrame frame, File file) {
         this.label = label;
         this.frame = frame;
-        try {
-            File file = new File(fileName);
-            Scanner scan = new Scanner(file);
+        this.file = file;
+        setLayout(new GridLayout(2, 2));
 
-            this.label.setText(scan.nextLine());
+        for (int x = 0; x < buttons.length; x++) {
+            buttons[x]  = new AnswerButton(true, "");
+            buttons[x].setPreferredSize(new Dimension(500, 300));
+            // buttons[x].setBackground(Color.CYAN); --Needed for testing
+            buttons[x].addActionListener(new AnswerButtonListener());
+            add(buttons[x]);
 
-            setLayout(new GridLayout(2, 2));
-
-            for (int x = 0; x < buttons.length; x++) {
-                String text = scan.nextLine();
-                System.out.println(text);
-                if (text.charAt(0) == 'T') {
-                    buttons[x]  = new AnswerButton(true, "" + text.substring(1));
-                } else {
-                    buttons[x]  = new AnswerButton(false, "" + text.substring(1));
-                }
-                buttons[x].setPreferredSize(new Dimension(500, 300));
-                // buttons[x].setBackground(Color.CYAN); --Needed for testing
-                buttons[x].addActionListener(new AnswerButtonListener());
-                add(buttons[x]);
-    
-            }
-            scan.close();
-            this.memoryIndex++;
-        } catch(FileNotFoundException e) {
-            System.out.println("File Not Found");
-            this.label.setText("File Not Found");
         }
     }
 
-    private void nextQuestion() {
+    public void setFile(File file) {
+        this.file = file;
+    }
+
+    public void nextQuestion() {
         try {
-            File file = new File("Test.txt");
-            Scanner scan = new Scanner(file);
+            Scanner scan = new Scanner(this.file);
             for (int x = 0; x < this.memoryIndex*5; x++) {
                 scan.nextLine();
             }

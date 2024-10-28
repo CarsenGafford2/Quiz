@@ -1,0 +1,100 @@
+What is the acceleration due to gravity on Earth?
+F9.8 m/s²
+T9.81 m/s²
+F10.0 m/s²
+F8.9 m/s²
+What is the unit of force?
+FJoule
+TNewton
+FPascal
+FEnergy
+What is the speed of light in a vacuum?
+F3.0 x 10^6 m/s
+F3.0 x 10^8 m/s
+T3.0 x 10^8 m/s
+F3.0 x 10^9 m/s
+What is the principle behind the conservation of energy?
+FEnergy can be created and destroyed
+FEnergy is transferred only as heat
+TEnergy cannot be created or destroyed
+FEnergy is always lost in a system
+What is the formula for kinetic energy?
+FKE = mv²
+TKE = 1/2 mv²
+FKE = mv
+FKE = mgh
+What does E=mc² represent?
+FEnergy equals mass plus charge
+TEnergy equals mass times the speed of light squared
+FEnergy equals mass divided by acceleration
+FEnergy equals mass times volume
+What is the law of universal gravitation?
+FAll masses attract each other
+TEvery point mass attracts every other point mass
+FGravity only exists between large objects
+FGravitational force depends on the color of the objects
+What type of wave is light?
+FLongitudinal
+FMechanical
+TElectromagnetic
+FTransverse
+What is the unit of electric current?
+FTesla
+FVolt
+TAmpere
+FOhm
+What does a circuit need to function?
+TComplete path
+FOnly a battery
+FOnly a resistor
+FOnly wires
+What is the formula for calculating work?
+TWork = Force x Distance
+FWork = Force + Distance
+FWork = Force - Distance
+FWork = Force / Distance
+What is the temperature at which all molecular motion stops?
+F0°C
+T0 K
+F-273°C
+F100 K
+What is the SI unit of pressure?
+FNewton
+TPascal
+FBar
+FTorr
+What does Hooke's Law relate to?
+TForce and extension in springs
+FGravity and mass
+FElectric charge and field strength
+FEnergy and time
+What is the principle of buoyancy?
+FHeavier objects sink
+TAn object will float if it displaces a weight of fluid equal to its own weight
+FOnly solid objects can float
+FAll objects float in water
+What type of energy is stored in a compressed spring?
+FPotential energy
+FMechanical energy
+TKinetic energy
+FGravitational energy
+What is the frequency of a wave?
+FThe speed of the wave divided by its wavelength
+FThe distance traveled by the wave
+TThe number of cycles per second
+FThe height of the wave
+What is the law of reflection?
+TAngle of incidence equals angle of reflection
+FAngle of incidence is always greater
+FLight cannot be reflected
+FLight travels in straight lines only
+What is the charge of an electron?
+F+1
+F0
+T-1
+F+2
+What is the term for the bending of light as it passes from one medium to another?
+FReflection
+TRefraction
+FDiffraction
+FDispersion

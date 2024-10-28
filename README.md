@@ -15,7 +15,7 @@ java QuizGUI
 To use the QuizGUI you need to select a correctly formated .txt file in order to load the quiz
 [Example.txt](https://github.com/CarsenGafford2/Quiz/blob/main/Example.txt) is an example file that can be loaded to provide an example quiz
 
-# text file formating
+# Text file formating
 For creating quizes, you should use the fallowing format in a plain text file
 ```
 The Main question being asked goes here
@@ -30,7 +30,7 @@ TCorrect
 FIncorrect
 ```
 Make sure every question has four answers always. You can have as many questions as needed just ensure that you have no newlines between them.
- Multiple answers can be correct if you want.
+ Multiple answers can be correct if you want. This process should be easier as I intend to make a quiz maker GUI that will do this process for you.
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)

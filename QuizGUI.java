@@ -1,3 +1,9 @@
+/**
+ * GUI for displaying and using the QuizPanel class
+ * @author Carsen Gafford
+ * @version 1.3
+ */
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -38,6 +44,10 @@ public class QuizGUI {
         quizPanel.setVisible(false);
         frame.getContentPane().add(quizPanel, BorderLayout.CENTER);
 
+        /**
+         * Action Listener for the uploadButton, allowing for the user to select a file
+         * @author Carsen Gafford
+         */
         uploadButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

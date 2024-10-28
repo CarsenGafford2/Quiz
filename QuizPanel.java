@@ -1,3 +1,9 @@
+/**
+ * Panel for displaying AnswerButtons and dealing with Game Logic
+ * @author Carsen Gafford
+ * @version 1.3
+ */
+
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
@@ -18,6 +24,14 @@ public class QuizPanel extends JPanel {
     private int incorrect = 0;
     private JFrame frame;
     private File file;
+
+    /**
+     * Constructor for the QuizPanel Object
+     * @author Carsen Gafford
+     * @param label The Label to be used to set the question
+     * @param frame a JFrame to assign things to
+     * @param file The file to load and read from
+     */
     public QuizPanel(JLabel label, JFrame frame, File file) {
         this.label = label;
         this.frame = frame;
@@ -34,10 +48,19 @@ public class QuizPanel extends JPanel {
         }
     }
 
+    /**
+     * Sets the file of the QuizPanel
+     * @author Carsen Gafford
+     * @param file the file to be used
+     */
     public void setFile(File file) {
         this.file = file;
     }
 
+    /**
+     * Loads the next question from the loaded file
+     * @author Carsen Gafford
+     */
     public void nextQuestion() {
         try {
             Scanner scan = new Scanner(this.file);
@@ -71,11 +94,19 @@ public class QuizPanel extends JPanel {
         }
     }
 
+    /**
+     * Displays the Users score when the game ends
+     * @author Carsen Gafford
+     */
     private void GameOver() {
         JOptionPane.showMessageDialog(null, "You got: " + correct + "/" + (incorrect + correct), "Game over", JOptionPane.INFORMATION_MESSAGE);
         frame.dispose();
     }
 
+    /**
+     * ActionListener for the AnswerButton Object
+     * @author Carsen Gafford
+     */
     private class AnswerButtonListener implements ActionListener {
 
         public void actionPerformed(ActionEvent e) {

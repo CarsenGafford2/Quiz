@@ -4,11 +4,11 @@ Quiz is a Java GUI program for playing quizes correctly formatted and saved on a
 
 # Installation
 First use Javac in command prompt to compile the .java files into .class files
-```
+``` bash
 javac QuizGUI.java
 ```
 Then use Java to run the QuizGUI.class file
-```
+``` bash
 java QuizGUI
 ```
 # Usage
